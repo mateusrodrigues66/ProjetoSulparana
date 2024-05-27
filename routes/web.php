@@ -1,18 +1,18 @@
 <?php
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'index']);
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// routes/web.php
+
+use App\Http\Controllers\ProducaoController;
+
+Route::get('/producao/opcao1', [ProducaoController::class, 'opcao1'])->name('producao.opcao1');
+Route::get('/producao/opcao2', [ProducaoController::class, 'opcao2'])->name('producao.opcao2');
+Route::get('/producao/opcao3', [ProducaoController::class, 'opcao3'])->name('producao.opcao3');
