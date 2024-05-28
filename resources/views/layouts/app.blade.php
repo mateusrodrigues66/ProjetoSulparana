@@ -17,7 +17,7 @@
                 <a href="#" class="dropdown-toggle" id="producaoDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     Produção
                 </a>
-                <!-- resources/views/layouts/app.blade.php -->
+
                 <ul class="dropdown-menu" aria-labelledby="producaoDropdown">
                     <li><a class="dropdown-item" href="{{ route('producao.opcao1') }}">Opção 1</a></li>
                     <li><a class="dropdown-item" href="{{ route('producao.opcao2') }}">Opção 2</a></li>
